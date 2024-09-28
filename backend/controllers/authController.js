@@ -11,7 +11,6 @@ exports.loginOrRegister = async (req, res) => {
 
         let user = await User.findOne({ firebaseId: uid });
         if (!user) {
-            // If no user exists in MongoDB, create one
             user = new User({ firebaseId: uid, name, email });
             await user.save();
         }
