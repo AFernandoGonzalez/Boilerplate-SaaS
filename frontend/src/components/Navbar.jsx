@@ -16,6 +16,9 @@ export const Navbar = () => {
             <Link to="/boilerplates" className="text-white hover:text-gray-400">Boilerplates</Link>
           </li>
           <li>
+            <Link to="/dashboard" className="text-white hover:text-gray-400">Dashboard</Link>
+          </li>
+          <li>
             <Link to="/login" className="text-white hover:text-gray-400">Login</Link>
           </li>
         </ul>
